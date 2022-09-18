@@ -374,6 +374,6 @@ input#submit:active {
 p#copyright {
   font-size: .8em;
   color: var(--grey);
-  margin: 7rem 0;
+  margin: 7rem 0 1rem 0;
 }
 
