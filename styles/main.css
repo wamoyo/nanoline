@@ -34,6 +34,8 @@ section.left * {
 
 section.right {
   position: relative;
+  background: var(--white);
+  padding: 3rem 1rem;
   z-index: 2;
 }
 
@@ -135,9 +137,12 @@ section#banner {
     z-index: 3;
   }
 
-  section.left,
-  section.right {
+  section.left {
     padding: 5rem 1rem;
+  }
+
+  section.right {
+    padding: 4.5rem 2.25rem 5rem 2.25rem;
   }
 
   section.left h2 {
@@ -198,9 +203,12 @@ section#banner {
 
 @media all and (min-width: 1200px) {
 
-  section.left,
-  section.right {
+  section.left {
     padding: 8rem 3rem;
+  }
+
+  section.right {
+    padding: 7.5rem 4.24rem 8rem 4.25rem;
   }
 
   section#title::after,
