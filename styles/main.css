@@ -1,4 +1,6 @@
 
+/* Basic Styles */
+
 :root {
   --bg: #f4db7d;
   --accent: #f4db7d;
@@ -6,16 +8,20 @@
   --active: #f4db7d;
   --white: #ffffff;
   --black: #000000;
+  --grey: #767472;
+  --light-grey: #c6c4c2;
 }
 
-* { box-sizing: border-box; }
+* { box-sizing: border-box; transition: .5s; }
 
 body {
   position: relative;
   margin: 0px;
   background: var(--bg);
   font-family: 'Ubuntu';
+  font-weight: 200;
   line-height: 1.75;
+  font-size: 100%;
 }
 
 section#title::before {
@@ -42,17 +48,21 @@ section.right {
 }
 
 section {
-  padding: 1rem;
+  padding: 1em;
 }
+
+p { font-weight: 200; }
 
 h1, h2, h3, h4, h5, h6 { line-height: 1; }
 
-h1 { font-size: 4rem; }
-h2 { font-size: 1.75rem; font-variant: small-caps }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.35rem; }
-h5 { font-size: 1.25rem; }
-h6 { font-size: 1.1rem; }
+h1 { font-size: 4em; }
+h2 { font-size: 1.75em; font-variant: small-caps; font-weight: 300; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.35em; }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1.1em; }
+
+ul li { list-style-type: circle; }
 
 img {
   max-width: 100%;
@@ -108,7 +118,8 @@ section#banner {
   }
 
   section#title p.subtitle {
-    font-size: 1.2rem;
+    font-size: 1.2em;
+    font-weight: 300;
     font-variant: small-caps;
   }
 
@@ -124,7 +135,7 @@ section#banner {
     content: '';
     position: absolute;
     right: -2rem;
-    top: calc(50% - .05em);
+    top: calc(50% - .075em);
     width: .25em;
     height: .25em;
     border-radius: 50%;
@@ -171,9 +182,9 @@ section#banner {
     content: '';
     position: absolute;
     right: -2rem;
-    top: .4em;
-    width: .45em;
-    height: .45em;
+    top: .475em;
+    width: .25em;
+    height: .25em;
     border-radius: 50%;
     background: var(--black);
   }
@@ -237,5 +248,132 @@ section#banner {
   section.left.last::before {
     right: 4rem;
   }
+}
+
+@media all and (min-width: 1600px) {
+
+  body { font-size: 150%; }
+
+  section#title::after {
+    top: calc(50% - .5rem);
+  }
+
+}
+
+
+
+/* Forms and Links and Buttons */
+
+a.button {
+  text-decoration: none;
+  border: 2px solid var(--bg);
+  padding: 1rem 2rem 1.25rem 2rem;
+  color: var(--black);
+  border-radius: .5rem;
+  background: var(--bg);
+  font-variant: small-caps;
+  font-weight: 400;
+  transition: .5s;
+}
+
+a.button:focus,
+a.button:hover {
+  outline: none;
+  border: 2px solid var(--hover);
+  background: var(--hover);
+}
+
+a.button:active {
+  background: var(--active);
+}
+
+div.contact p.label {
+  font-variant: small-caps;
+  font-size: 1.15em;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+div.contact p.contact {
+  margin-top: 0;
+}
+
+div.contact p.contact a {
+  color: var(--black);
+}
+
+div.contact p.contact a:hover,
+div.contact p.contact a:focus {
+  outline: none;
+  opacity: .5;
+}
+
+@media all and (min-width: 900px) {
+
+  div.contact {
+    margin-right: 5.25rem;
+  }
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 2px solid var(--light-grey);
+  font-size: .8em;
+  width: 47%;
+}
+
+input#name {
+  margin-right: 4%;
+}
+
+textarea {
+  margin: 5% 0;
+  width: 99%;
+  height: 12rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  outline: none;
+  border: 2px solid var(--hover);
+}
+
+#submit {
+  border: 2px solid var(--bg);
+  padding: 1rem 2rem 1rem 2rem;
+  color: var(--black);
+  border-radius: .5rem;
+  background: var(--bg);
+  font-variant: small-caps;
+  font-size: .8em;
+  font-weight: 400;
+  cursor: pointer;
+  transition: .5s;
+}
+
+input#submit:focus,
+input#submit:hover {
+  outline: none;
+  border: 2px solid var(--hover);
+  background: var(--hover);
+}
+
+input#submit:active {
+  background: var(--active);
+}
+
+
+p#copyright {
+  font-size: .8em;
+  color: var(--grey);
+  margin: 7rem 0;
 }
 
