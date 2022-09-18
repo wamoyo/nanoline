@@ -14,6 +14,8 @@ body {
   position: relative;
   margin: 0px;
   background: var(--bg);
+  font-family: 'Ubuntu';
+  line-height: 1.75;
 }
 
 section#title::before {
@@ -43,8 +45,10 @@ section {
   padding: 1rem;
 }
 
+h1, h2, h3, h4, h5, h6 { line-height: 1; }
+
 h1 { font-size: 4rem; }
-h2 { font-size: 1.75rem; }
+h2 { font-size: 1.75rem; font-variant: small-caps }
 h3 { font-size: 1.5rem; }
 h4 { font-size: 1.35rem; }
 h5 { font-size: 1.25rem; }
@@ -52,6 +56,7 @@ h6 { font-size: 1.1rem; }
 
 img {
   max-width: 100%;
+  border-radius: .5rem;
 }
 
 section#banner {
@@ -66,6 +71,8 @@ section#banner {
     grid-template-columns: 1fr 1fr;
     align-content: center;
   }
+
+  body { font-size: 1.2rem; }
 
   section#title,
   section#banner {
@@ -94,6 +101,15 @@ section#banner {
 
   section#title::before {
     width: 50vw;
+  }
+
+  section#title h1 {
+    margin-bottom: 0;
+  }
+
+  section#title p.subtitle {
+    font-size: 1.2rem;
+    font-variant: small-caps;
   }
 
   section.left h1,
@@ -132,7 +148,7 @@ section#banner {
     content: '';
     position: absolute;
     right: 2.25rem;
-    top: calc(50% - 1.25rem);
+    top: calc(50% - .25rem);
     width: .25rem;
     height: 100%;
     background: var(--black);
