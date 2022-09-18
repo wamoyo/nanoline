@@ -78,6 +78,7 @@ section#banner {
   section.right {
     display: grid;
     align-content: top;
+    justify-content: right;
     height: 100%;
   }
 
@@ -100,6 +101,7 @@ section#banner {
   section.left h2 {
     position:relative;
     margin-right: 5rem;
+    max-width: 500px;
   }
 
   section#title h1::before {
