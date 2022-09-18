@@ -194,9 +194,9 @@ section#banner {
     content: '';
     position: absolute;
     right: -2rem;
-    top: calc(50% - .075em);
-    width: .25em;
-    height: .25em;
+    top: calc(50% - .035em);
+    width: .2em;
+    height: .2em;
     border-radius: 50%;
     background: var(--black);
   }
