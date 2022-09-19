@@ -464,7 +464,7 @@ textarea:hover {
 }
 
 #submit {
-  border: 2px solid var(--bg);
+  border: 4px solid var(--bg);
   padding: 1rem 2rem 1rem 2rem;
   color: var(--black);
   border-radius: .5rem;
@@ -480,11 +480,12 @@ textarea:hover {
 input#submit:focus,
 input#submit:hover {
   outline: none;
-  border: 2px solid var(--hover);
+  border: 4px solid var(--hover);
   background: var(--hover);
 }
 
 input#submit:active {
+  border: 4px solid var(--grey);
   background: var(--active);
 }
 
