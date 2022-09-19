@@ -7,6 +7,7 @@
   --hover: #fae9a8;
   --active: #f4db7d;
   --white: #ffffff;
+  --cloud: #f0f0f0;
   --black: #000000;
   --grey: #767472;
   --light-grey: #c6c4c2;
@@ -121,11 +122,14 @@ h4 { font-size: 1.35em; }
 h5 { font-size: 1.25em; }
 h6 { font-size: 1.1em; }
 
+p.small { font-size: .7em; }
+
 ul li { list-style-type: circle; }
 
 img {
   max-width: 100%;
   border-radius: .5rem;
+  margin: 1rem 0;
 }
 
 section#title h1 {
@@ -180,7 +184,7 @@ section#banner {
     height: 100%;
   }
 
-  section.right * {
+  section.right > * {
     width: 100%;
     max-width: 900px;
   }
@@ -371,6 +375,11 @@ a.button {
   transition: .5s;
 }
 
+a.button-light {
+  background: var(--cloud);
+  border: 2px solid var(--black);
+}
+
 a.button:focus,
 a.button:hover {
   outline: none;
@@ -378,8 +387,21 @@ a.button:hover {
   background: var(--hover);
 }
 
+a.button-light:focus,
+a.button-light:hover {
+  color: var(--grey);
+  border: 2px solid var(--grey);
+  background: var(--cloud) !important;
+}
+
 a.button:active {
   background: var(--active);
+}
+
+a.button-light:active {
+  color: var(--bg);
+  border: 2px solid var(--bg);
+  background: var(--cloud);
 }
 
 div.contact p.label {
