@@ -162,8 +162,7 @@ section#banner {
     height: 100vh;
   }
 
-  section.left,
-  section.right {
+  section.left {
     display: grid;
     align-content: top;
     height: 100%;
@@ -174,13 +173,6 @@ section#banner {
     display: grid;
     align-content: top;
     justify-content: right;
-    height: 100%;
-  }
-
-  section.right {
-    display: grid;
-    align-content: top;
-    justify-content: left;
     height: 100%;
   }
 
@@ -364,6 +356,8 @@ section#banner {
 /* Forms and Links and Buttons */
 
 a.button {
+  display: inline-block;
+  width: auto;
   text-decoration: none;
   border: 2px solid var(--bg);
   padding: 1rem 2rem 1.25rem 2rem;
