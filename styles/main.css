@@ -145,7 +145,7 @@ section#banner {
 
   body {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 5fr 7fr;
     align-content: center;
   }
 
