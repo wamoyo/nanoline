@@ -1,4 +1,46 @@
 
+/* Ubuntu fonts */
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubuntu/Ubuntu-Regular.woff2') format('woff2'),
+       url('../fonts/ubuntu/Ubuntu-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu Thin';
+  src: url('../fonts/ubuntu/Ubuntu-Thin.woff2') format('woff2'),
+       url('../fonts/ubuntu/Ubuntu-Thin.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu Thin';
+  src: url('../fonts/ubuntu/Ubuntu-Medium.woff2') format('woff2'),
+       url('../fonts/ubuntu/Ubuntu-Medium.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu Thin';
+  src: url('../fonts/ubuntu/Ubuntu-Light-Italic.woff2') format('woff2'),
+       url('../fonts/ubuntu/Ubuntu-Light-Italic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubuntu/Ubuntu-Bold.woff2') format('woff2'),
+       url('../fonts/ubuntu/Ubuntu-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 /* Basic Styles */
 
 :root {
@@ -20,10 +62,36 @@ body {
   margin: 0px;
   background: var(--bg);
   font-family: 'Ubuntu';
-  font-weight: 200;
+  font-weight: normal;
   line-height: 1.75;
   font-size: 100%;
 }
+
+p { font-family: 'Ubuntu Thin'; font-weight: 200; }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Ubuntu'; font-weight: 700; line-height: 1; }
+
+h1 { font-size: 4em; }
+h2 { font-size: 1.75em; font-variant: small-caps; font-weight: 300; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.35em; }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1.1em; }
+
+p.small { font-size: .7em; }
+
+ul li { font-family: 'Ubuntu Thin'; font-weight: 200; list-style-type: circle; }
+
+strong { font-family: 'Ubuntu'; font-weight: normal; }
+
+em { font-family: 'Ubuntu Thin'; font-style: italic; }
+
+img {
+  max-width: 100%;
+  border-radius: .5rem;
+  margin: 1rem 0;
+}
+
 
 /* Some Page Styles */
 
@@ -109,27 +177,6 @@ section.right {
 
 section {
   padding: 1em;
-}
-
-p { font-weight: 200; }
-
-h1, h2, h3, h4, h5, h6 { line-height: 1; }
-
-h1 { font-size: 4em; }
-h2 { font-size: 1.75em; font-variant: small-caps; font-weight: 300; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.35em; }
-h5 { font-size: 1.25em; }
-h6 { font-size: 1.1em; }
-
-p.small { font-size: .7em; }
-
-ul li { list-style-type: circle; }
-
-img {
-  max-width: 100%;
-  border-radius: .5rem;
-  margin: 1rem 0;
 }
 
 section#title h1 {
