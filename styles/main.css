@@ -18,6 +18,14 @@
 }
 
 @font-face {
+  font-family: 'Ubuntu Light';
+  src: url('../fonts/ubuntu/Ubuntu-Light.woff2') format('woff2'),
+       url('../fonts/ubuntu/Ubuntu-Light.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Ubuntu Thin';
   src: url('../fonts/ubuntu/Ubuntu-Medium.woff2') format('woff2'),
        url('../fonts/ubuntu/Ubuntu-Medium.woff') format('woff');
@@ -26,7 +34,7 @@
 }
 
 @font-face {
-  font-family: 'Ubuntu Thin';
+  font-family: 'Ubuntu Thin'; /* Fix This */
   src: url('../fonts/ubuntu/Ubuntu-Light-Italic.woff2') format('woff2'),
        url('../fonts/ubuntu/Ubuntu-Light-Italic.woff') format('woff');
   font-weight: 200;
@@ -205,6 +213,10 @@ section#title h1 {
 }
 
 section#title p.subtitle {
+  font-family: 'Ubuntu Light';
+  font-weight: normal;
+  font-variant: small-caps;
+  font-size: 1.165em;
   margin-left: .25rem;
 }
 
@@ -272,9 +284,6 @@ section#banner {
     top: calc(50% + 1rem);
     right: 1.25rem;
     padding-left: 1rem;
-    font-size: 1.2em;
-    font-weight: 300;
-    font-variant: small-caps;
   }
 
   section.left h1,
