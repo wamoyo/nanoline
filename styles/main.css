@@ -512,6 +512,7 @@ textarea {
   padding: 1rem;
   border-radius: .5rem;
   border: 2px solid var(--light-grey);
+  font-family: 'Ubuntu Thin';
   font-size: .8em;
   width: 47%;
 }
