@@ -69,9 +69,9 @@ body {
 
 p { font-family: 'Ubuntu Thin'; font-weight: 200; }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Ubuntu'; font-weight: 700; line-height: 1; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Ubuntu'; font-weight: normal; line-height: 1; }
 
-h1 { font-size: 4em; }
+h1 { font-size: 4em; font-weight: bold; }
 h2 { font-size: 1.75em; font-variant: small-caps; font-weight: 300; }
 h3 { font-size: 1.5em; }
 h4 { font-size: 1.35em; }
@@ -411,8 +411,9 @@ a.button {
   color: var(--black);
   border-radius: .5rem;
   background: var(--bg);
+  font-family: 'Ubuntu';
   font-variant: small-caps;
-  font-weight: 400;
+  font-weight: normal;
   transition: .5s;
 }
 
@@ -446,9 +447,10 @@ a.button-light:active {
 }
 
 div.contact p.label {
+  font-family: 'Ubuntu';
   font-variant: small-caps;
   font-size: 1.15em;
-  font-weight: 400;
+  font-weight: normal;
   margin-bottom: 0;
 }
 
