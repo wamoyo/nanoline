@@ -133,6 +133,19 @@ body.page article {
   margin: auto;
 }
 
+body.page article a {
+  color: var(--black);
+}
+
+body.page article a:hover,
+body.page article a:focus {
+  color: var(--grey);
+}
+
+body.page article a:active {
+  color: var(--black);
+}
+
 body.page h1 {
   font-size: 3em;
   margin: 3rem 0 1rem 0;
