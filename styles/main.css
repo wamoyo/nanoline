@@ -175,6 +175,86 @@ body.page p.subtitle {
   margin-bottom: 2.5rem;
 }
 
+body.page section.call-to-action {
+  display: flex;
+  justify-content: flex-start;
+  align-items: top;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0;
+}
+
+body.page div.more-content {
+  background: var(--cloud);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+body.page div.call-us {
+  background: var(--bg);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+body.page div.call-us h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+body.page div.call-us div.person div.image img {
+  float: left;
+  margin: 0 .5rem 0 0;
+  width: 75px;
+}
+
+body.page div.more-content h2 {
+  margin: 0;
+}
+
+body.page div.more-content h5 {
+  margin: .75rem 0;
+}
+
+body.page div.call-us div.person h4 {
+  margin: 0 .5rem 0 0;
+}
+
+body.page div.call-us div.person p {
+  margin: 0;
+}
+
+@media all and (min-width: 900px) {
+
+  body.page div.more-content,
+  body.page div.call-us {
+    max-width: 420px;
+  }
+
+  body.page div.call-us {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  body.page div.call-us div.person {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  body.page div.call-us div.person div.image {
+    margin-right: 1rem;
+  }
+
+  body.page div.call-us div.person div.image img {
+    min-width: 110px;
+  }
+}
+
+body.page video {
+  width: 100%;
+}
+
 body.page footer {
   text-align: center;
 }
