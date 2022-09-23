@@ -115,7 +115,7 @@ body.page header {
   padding: .25rem;
   text-align: left;
   padding-left: 2rem;
-  line-height: .75;
+  line-height: 1;
 }
 
 body.page header p {
@@ -126,12 +126,15 @@ body.page header p {
 body.page header a {
   color: var(--black);
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.25em;
   font-weight: bold;
 }
 
+@media all and (min-width: 420px) { body.page header a { font-size: 1.5em; }}
+@media all and (min-width: 480px) { body.page header a { font-size: 1.75em; }}
+
 body.page header span.hint {
-  font-size: .4em;
+  font-size: .65em;
   font-weight: 200;
 }
 
