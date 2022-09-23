@@ -288,17 +288,17 @@ section {
   padding: 1em;
 }
 
-section#title h1 {
-  margin: 1rem 0;
-}
-
 section#title p.subtitle {
   font-family: 'Ubuntu Light';
   font-weight: normal;
   font-variant: small-caps;
   font-size: 1.165em;
   margin-left: .25rem;
+  color: var(--grey);
 }
+
+@media all and (min-width: 480px) { section#title p.subtitle { font-size: 1.35em; }}
+@media all and (min-width: 750px) { section#title p.subtitle { font-size: 1.75em; }}
 
 section#banner {
   min-height: 400px;
@@ -306,6 +306,8 @@ section#banner {
 }
 
 @media all and (min-width: 975px) {
+
+  section#title p.subtitle { font-size: 1.165em; }
 
   body {
     display: grid;
@@ -353,10 +355,6 @@ section#banner {
 
   section#title::before {
     width: 50vw;
-  }
-
-  section#title h1 {
-    margin: 5rem 5rem 5rem 2rem;
   }
 
   section#title p.subtitle {
