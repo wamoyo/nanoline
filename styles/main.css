@@ -504,7 +504,7 @@ section#banner {
   body { font-size: 150%; }
 
   section#title::after {
-    top: calc(50% + .3rem);
+    top: calc(50% + .4rem);
   }
 
 }
