@@ -272,7 +272,7 @@ section#title::before {
   height: 100%;
   width: 100%;
   z-index: 1;
-  background: url('../images/cnt-bg.svg') 50% 80% / cover no-repeat;
+  background: url('../images/carbon-nantube-bg.png') 50% 80% / cover no-repeat;
 }
 
 section.left * {
@@ -504,7 +504,7 @@ section#banner {
   body { font-size: 150%; }
 
   section#title::after {
-    top: calc(50% + .5rem);
+    top: calc(50% + .3rem);
   }
 
 }
