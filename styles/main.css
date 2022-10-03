@@ -305,7 +305,7 @@ section#title p.subtitle {
 
 section#banner {
   min-height: 400px;
-  background: url('../images/cnt-maker.jpg') 60% 25% / cover no-repeat white
+  background: url('../images/powered-tubes.jpg') 50% 50% / cover no-repeat white
 }
 
 @media all and (min-width: 975px) {
