@@ -588,7 +588,7 @@ form#contact fieldset {
 
 #contact p#form-status {
   display: inline-block;
-  background: #eb9898;
+  background: var(--grey);
   border-radius: 1rem;
   font-weight: bold;
   transition: .5s;
@@ -596,12 +596,14 @@ form#contact fieldset {
 
 #contact p#form-status.fail {
   padding: .5rem 1rem;
+  background: #eb9898;
   font-size: 1rem;
   margin-top: 0;
 }
 
 #contact p#form-status.success {
   padding: .75rem;
+  background: #c5eb98;
   font-size: 1rem;
 }
 
