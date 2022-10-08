@@ -597,6 +597,7 @@ form#contact fieldset {
 #contact p#form-status.fail {
   padding: .5rem 1rem;
   font-size: 1rem;
+  margin-top: 0;
 }
 
 #contact p#form-status.success {
