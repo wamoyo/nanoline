@@ -27,7 +27,7 @@
 
         var email = mail.value || ''
 
-        fetch('https://y1omagzluc.execute-api.us-east-1.amazonaws.com/', {
+        fetch('https://y1omagzluc.execute-api.us-east-1.amazonaws.com/contact-api-nanoline', {
           method: 'POST',
           body: JSON.stringify({
             contact: {
