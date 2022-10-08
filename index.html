@@ -111,6 +111,10 @@
     <section class="left last">
       <h2>Get In Touch</h2>
       <div class="contact">
+        <div class="address">
+          <p class="label">address</p>
+          <p class="contact">546 Broadway, 5F, New York, NY 10012</p>
+        </div>
         <div class="email">
           <p class="label">email</p>
           <p class="contact"><a class="email" href="mailto:info@carbonnanotubes.org">info@carbonnanotubes.org</a></p>
@@ -125,14 +129,18 @@
     <section class="right">
       <p><strong>Contact us</strong> to learn more, receive an information sheet for our carbon nanotube products, or inquire about working with our materials.</p>
       <form id="contact" action="#" method="post">
-        <input id="name" type="text" name="name" value="" placeholder="Name">
-        <input id="email" type="email" name="email" value="" placeholder="Email">
-        <textarea name="message" id="message" placeholder="Message"></textarea>
-        <input id="submit" type="submit" name="submit" value="send message »">
+        <fieldset disabled="disabled">
+          <input id="name" type="text" name="name" value="" placeholder="Name">
+          <input id="mail" type="email" name="email" value="" placeholder="Email">
+          <textarea id="message" name="message" placeholder="Message"></textarea>
+          <p id="form-status"></p>
+          <input id="submit" type="submit" name="submit" value="send message »">
+        </fieldset>
       </form>
       <p id="copyright">© 2022 Industrial CNT LLC</p>
     </section>
 
+    <script src="/scripts/contact.js"></script>
   </body>
 </html>
 

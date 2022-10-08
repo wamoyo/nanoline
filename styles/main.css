@@ -568,6 +568,7 @@ div.contact p.label {
 
 div.contact p.contact {
   margin-top: 0;
+  text-decoration: underline;
 }
 
 div.contact p.contact a {
@@ -578,6 +579,29 @@ div.contact p.contact a:hover,
 div.contact p.contact a:focus {
   outline: none;
   opacity: .5;
+}
+
+form#contact fieldset {
+  padding: 0;
+  border: none;
+}
+
+#contact p#form-status {
+  display: inline-block;
+  background: #eb9898;
+  border-radius: 1rem;
+  font-weight: bold;
+  transition: .5s;
+}
+
+#contact p#form-status.fail {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+
+#contact p#form-status.success {
+  padding: .75rem;
+  font-size: 1rem;
 }
 
 @media all and (min-width: 975px) {
