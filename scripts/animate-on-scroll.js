@@ -2,24 +2,28 @@
   "use strict"
   window.addEventListener('load', function (event) {
 
-    // Set Up
+    if ('IntersectionObserver' in window) {
 
-    var animated = document.querySelectorAll('.animate')
+      // Set Up
 
-    animated.forEach(function (element) {
-      element.classList.add('hidden')
-    })
+      var animated = document.querySelectorAll('.animate')
 
-    // Animate On Scroll
-
-    var observer = new IntersectionObserver( function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove('hidden')
-        }
+      animated.forEach(function (element) {
+        element.classList.add('hidden')
       })
-    })
-    animated.forEach((element) => observer.observe(element))
+
+      // Animate On Scroll
+
+      var observer = new IntersectionObserver( function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove('hidden')
+          }
+        })
+      })
+      animated.forEach((element) => observer.observe(element))
+
+    }
 
   })
 }());
