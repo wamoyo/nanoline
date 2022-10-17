@@ -63,7 +63,7 @@
   --light-grey: #c6c4c2;
 }
 
-* { box-sizing: border-box; transition: .5s; }
+* { box-sizing: border-box; transition: 1s; }
 
 body {
   position: relative;
@@ -73,6 +73,7 @@ body {
   font-weight: normal;
   line-height: 1.75;
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 p { font-family: 'Ubuntu Thin'; font-weight: 200; }
@@ -265,13 +266,13 @@ body.page footer {
 
 /* End Page Styles */
 
-section#title::before {
+section#title div.bg-cnt-img::before {
   content: '';
   position: fixed;
   top: 0px;
   left: 0px;
   height: 100%;
-  width: 100%;
+  width: 50%;
   z-index: 1;
   background: url('../images/carbon-nantube-bg.png') 50% 80% / cover no-repeat;
 }
@@ -526,7 +527,7 @@ a.button {
   font-family: 'Ubuntu';
   font-variant: small-caps;
   font-weight: normal;
-  transition: .5s;
+  transition: 1s;
 }
 
 a.button-light {
@@ -591,7 +592,7 @@ form#contact fieldset {
   background: var(--grey);
   border-radius: 1rem;
   font-weight: bold;
-  transition: .5s;
+  transition: 1s;
 }
 
 #contact p#form-status.fail {
@@ -660,7 +661,7 @@ textarea:hover {
   font-weight: normal;
   width: auto;
   cursor: pointer;
-  transition: .5s;
+  transition: 1s;
 }
 
 input#submit:focus,
@@ -680,5 +681,50 @@ p#copyright {
   font-size: .8em;
   color: var(--grey);
   margin: 9rem 0 1rem 0;
+}
+
+
+/* Animate On Scroll */
+
+.animate {
+  transition: 1s;
+}
+
+.animate:nth-child(2) { transition-delay: 200ms; }
+.animate:nth-child(3) { transition-delay: 400ms; }
+.animate:nth-child(4) { transition-delay: 600ms; }
+.animate:nth-child(5) { transition-delay: 800ms; }
+.animate:nth-child(6) { transition-delay: 1000ms; }
+.animate:nth-child(7) { transition-delay: 1200ms; }
+.animate:nth-child(8) { transition-delay: 1400ms; }
+
+.slide-in-from-right,
+.slide-in-from-left {
+  filter: blur(0px);
+  opacity: 1;
+  transform: translate(0px);
+}
+
+.slide-in-from-left.hidden {
+  filter: blur(3px);
+  opacity: 0;
+  transform: translate(-100px);
+}
+
+.slide-in-from-right.hidden {
+  filter: blur(3px);
+  opacity: 0;
+  transform: translate(100px);
+}
+
+.fadetwo {
+  animation: fadetwo 2.5s;
+  transition: .75s;
+}
+
+@keyframes fadetwo {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
