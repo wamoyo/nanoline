@@ -102,6 +102,11 @@ img {
   margin: 1rem 0;
 }
 
+a {
+  color: var(--black);
+  font-weight: bold;
+}
+
 
 /* Some Page Styles */
 
@@ -726,5 +731,24 @@ p#copyright {
   0% { opacity: 0; }
   20% { opacity: 0; }
   100% { opacity: 1; }
+}
+/* Existing styles... */
+
+/* Add these new styles at the end of your CSS file */
+
+/* Ensure full width on mobile devices */
+@media screen and (max-width: 974px) {
+
+  /* Ensure animations don't affect layout */
+  .animate {
+    width: 100%;
+  }
+
+  .slide-in-from-right.hidden,
+  .slide-in-from-left.hidden {
+    transform: none;
+    opacity: 0;
+  }
+
 }
 
