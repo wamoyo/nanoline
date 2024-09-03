@@ -279,7 +279,7 @@ section#title div.bg-cnt-img::before {
   height: 100%;
   width: 50%;
   z-index: 1;
-  background: url('../images/carbon-nantube-bg.png') 50% 80% / cover no-repeat;
+  /* background: url('../images/carbon-nantube-bg.png') 50% 80% / cover no-repeat; */
 }
 
 section.left * {
