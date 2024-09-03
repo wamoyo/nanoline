@@ -104,7 +104,7 @@ img {
 
 a {
   color: var(--black);
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 
