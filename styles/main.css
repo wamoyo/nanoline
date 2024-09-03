@@ -312,8 +312,10 @@ section#title p.subtitle {
 
 section#banner {
   min-height: 400px;
-  background: url('../images/tubes-bg.png') 50% 50% / cover no-repeat white;
-  filter: contrast(122%) brightness(89%) saturate(74%) sepia(67%);
+  background: url('../images/cnt-dispersion.jpg') 50% 50% / cover no-repeat white;
+  /* background: url('../images/tubes-bg.png') 50% 50% / cover no-repeat white; */
+  /* filter: contrast(122%) brightness(89%) saturate(74%) sepia(67%); */
+
   /* filter: contrast(122%) brightness(50%) saturate(74%) grayscale(100%); */
   /* filter: contrast(165%) brightness(75%) saturate(79%) grayscale(100%); */
   /* filter: contrast(165%) brightness(75%) saturate(79%) sepia(100%) grayscale(100%); */
